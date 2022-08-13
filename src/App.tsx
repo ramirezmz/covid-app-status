@@ -1,13 +1,18 @@
 import api from './services/api'
-function App() {
+import Navbar from './components/NavBar/Navbar'
+import './main.scss'
+
+const App = () => {
   
-async function getData() {
-  const response = await api.get('/')
-  console.log(response.data)
+const getData = () => {
+  api.get('/').then(response => {
+    console.log(response.data)
+  })
 }
 
   return (
     <div className="App">
+      <Navbar />
       hello
       <button onClick={getData}>Get Data</button>
     </div>
