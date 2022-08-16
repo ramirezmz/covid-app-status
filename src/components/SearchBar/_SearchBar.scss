@@ -1,0 +1,35 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2.5rem;
+  width: 18rem;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.search input {
+  position: relative;
+  width: 14rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  border: #fff;
+  font-size: 1.2em;
+}
+
+input:focus {
+  box-shadow: none;
+  border: 0 none;
+  outline: none;
+}
+
+.search__button {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: #fff;
+  cursor: pointer;
+}
