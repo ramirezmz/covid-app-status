@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" id="navbar__logo">
-        <img src="/src/assets/mask.png" alt="vacine"/>
+        <img className='navbar__image' src="/src/assets/mask.png" alt="vacine"/>
       </Link>
       <FaBars className='navbar__hambuger'/>
       <div className="navbar__menu">
