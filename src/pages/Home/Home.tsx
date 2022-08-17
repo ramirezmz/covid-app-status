@@ -6,13 +6,7 @@ import Loading from '../../components/Loading/Loading'
 import { CountryVaccine } from '../../components/Interfaces'
 import Card from '../../components/Card/Card'
 
-interface Props {
-  data: {
-    All: CountryVaccine
-  }
-}
 
-    
 function validateSearch(search: string) {
     return search[0].toUpperCase() + search.slice(1)
   }
@@ -21,7 +15,7 @@ function Home() {
   const [search, setSearch] = useState('')
   const [dbValue, setDbValue] = useState('')
   const [loading, setLoading] = useState(false)
-  const [result, setResult] = useState<Array<CountryVaccine>>([])
+  const [result, setResult] = useState<CountryVaccine>()
 
   const debouncedSearch = useRef(debounce(nextValue => setDbValue(nextValue) , 1500)).current
 
@@ -31,8 +25,8 @@ function Home() {
       setLoading(true)
       const fetchData = async () => {
         const url = `/vaccines?country=${validateSearch(search)}`
-        const result = await api.get<Props>(url)
-        setResult(result)
+        const result = await api.get<CountryVaccine>(url)
+        setResult(result.data)
         setLoading(false)
     }
     fetchData()
@@ -57,7 +51,7 @@ function Home() {
       />
     </div>
     <div className='container__result'>
-        { loading ? <Loading /> : <Card {...result.data}/> }
+        { loading ? <Loading /> : <Card data={result}/> }
     </div>
     </div>
   )
