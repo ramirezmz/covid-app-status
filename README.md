@@ -1,3 +1,7 @@
+# Visita el resultado!
+
+[Click aqui](https://covid-app-status.vercel.app/) para visitar la página
+
 # Temática a desarrollar
 COVID-19
 https://github.com/M-Media-Group/Covid-19-API
@@ -11,6 +15,6 @@ https://github.com/M-Media-Group/Covid-19-API
 5. [x] Agrega un menú de hamburguesa y un botón flotante.
 6. [x] Añade estados.
 7. [x] Añade Redux.
-8. [] Muestra tu proyecto live en alguna plataforma en la nube.
+8. [x] Muestra tu proyecto live en alguna plataforma en la nube.
 9. [x] Agrega un preprocesador de estilos.
-10. [] Empaqueta tu aplicación en un contenedor de Docker.
+10. [x] Empaqueta tu aplicación en un contenedor de Docker.
