@@ -1,10 +1,10 @@
 export interface CountryVaccine {
   administered: number;
-  people_vaccinated: number;
+  people_vaccinated: string;
   people_partially_vaccinated: number;
   country: string;
-  population: number;
-  sq_km_area?: number;
+  population: string;
+  sq_km_area?: string;
   life_expectancy?: string;
   elevation_in_meters?: number;
   continent?: string;
