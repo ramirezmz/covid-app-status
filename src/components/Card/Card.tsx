@@ -21,10 +21,10 @@ function Card(props: Props) {
         <div className="details">
           <h2>{data.All.country}<br/><span>{data.All.capital_city}</span></h2>
           <div className="data">
-            <h3>{data.All.administered}<br/><span>Administradas</span></h3>
-            <h3>{data.All.people_vaccinated}<br/><span>Pessoas Vacinadas</span></h3>
-            <h3>{data.All.people_partially_vaccinated}<br/><span>Pessoas parcialmente Vacinadas</span></h3>
-            <h3>{data.All.population}<br/><span>População</span></h3>
+            <h3>{data.All.administered}<br/><span>Administered Doses</span></h3>
+            <h3>{data.All.people_vaccinated}<br/><span>Vaccinated people</span></h3>
+            <h3>{data.All.people_partially_vaccinated}<br/><span>Partially Vaccinated Persons</span></h3>
+            <h3>{data.All.population}<br/><span>Population</span></h3>
           </div>
         </div>
       </div>

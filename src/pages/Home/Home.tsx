@@ -5,7 +5,7 @@ import { debounce } from 'lodash'
 import Loading from '../../components/Loading/Loading'
 import { CountryVaccine } from '../../components/Interfaces'
 import Card from '../../components/Card/Card'
-
+import Title from '../../components/Title/Title'
 
 function validateSearch(search: string) {
     return search[0].toUpperCase() + search.slice(1)
@@ -36,23 +36,22 @@ function Home() {
   },[dbValue])
 
 
-
-
   return (
     <div className='container'>
+      <Title title="Covid -19 Status"/>
       <div className="search">
-          <BsSearch className="search__icon"/>
-      <input 
-        type="text"
-        className="input"
-        placeholder="Search..."
-        value={search}
-        onChange={(event) => { setSearch(event.target.value); debouncedSearch(event.target.value) }} 
-      />
-    </div>
-    <div className='container__result'>
+        <BsSearch className="search__icon"/>
+        <input 
+          type="text"
+          className="input"
+          placeholder="Search for a country"
+          value={search}
+          onChange={(event) => { setSearch(event.target.value); debouncedSearch(event.target.value) }} 
+        />
+      </div>
+        <div className='container__result'>
         { loading ? <Loading /> : <Card data={result}/> }
-    </div>
+      </div>
     </div>
   )
 }
