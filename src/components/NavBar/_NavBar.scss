@@ -1,5 +1,11 @@
+$black-color: #003249;
+$principal-color: #007EA7;
+$middle-color: #80CED7;
+$secondary-color: #9AD1D4;
+$white-color: #CCDBDC;
+
 .navbar {
-  background: #000;
+  background: $black-color;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -8,22 +14,23 @@
 }
 
 .navbar__links {
-  color: #fff;
+  color: $white-color;
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-weight: bold;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
   &:active{
-    color: #15cdfc
+    color: $middle-color
   }
 }
 
 .navbar__hambuger {
   display: none;
-  color: #fff;
+  color: $white-color;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -47,7 +54,7 @@
 }
 
 .navbar__links {
-  color: #fff;
+  color: $white-color;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -56,7 +63,7 @@
   cursor: pointer;
 
   &:active {
-    color: #15cdfc;
+    color: $middle-color;
   }
 }
 
@@ -72,4 +79,5 @@
   width: 60px;
   height: 60px;
   margin-right: 1rem;
+  color: $white-color;
 }

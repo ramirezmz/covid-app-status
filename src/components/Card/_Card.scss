@@ -1,10 +1,17 @@
+$black-color: #003249;
+$principal-color: #007EA7;
+$middle-color: #80CED7;
+$secondary-color: #9AD1D4;
+$white-color: #CCDBDC;
+$black-text: #282727;
+
 .card {
   position: relative;
   width: 870px;
   height: 410px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: $black-text 0px 3px 8px;
   transition: 0.5s;
 }
 .card:hover {
@@ -20,13 +27,13 @@
   height: 200px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: 0.5s;
 }
 .card:hover .imgBx {
-    width: 290px;
-    height: 210px;
+  width: 290px;
+  height: 210px;
 }
 
 .imgBx img {
@@ -63,8 +70,9 @@
 
 .card .card__content .details h2 span {
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 200;
   opacity: 0.5;
+  color: #003249;
 }
 
 .card .card__content .details .data {

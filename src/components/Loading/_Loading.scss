@@ -1,3 +1,9 @@
+$black-color: #003249;
+$principal-color: #007EA7;
+$middle-color: #80CED7;
+$secondary-color: #9AD1D4;
+$white-color: #CCDBDC;
+
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -17,7 +23,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: $white-color;
   margin: -4px 0 0 -4px;
 }
 

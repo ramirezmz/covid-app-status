@@ -1,12 +1,13 @@
 import './_NavBar.scss'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { SiWorldhealthorganization } from 'react-icons/si'
 
 function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" id="navbar__logo">
-        <img className='navbar__image' src="/src/assets/mask.png" alt="vacine"/>
+        <SiWorldhealthorganization className='navbar__image' />
       </Link>
       <FaBars className='navbar__hambuger'/>
       <div className="navbar__menu">

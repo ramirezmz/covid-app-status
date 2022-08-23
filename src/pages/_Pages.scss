@@ -1,3 +1,10 @@
+$black-color: #003249;
+$principal-color: #007EA7;
+$middle-color: #80CED7;
+$secondary-color: #9AD1D4;
+$white-color: #CCDBDC;
+$black-text: #282727;
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,13 +12,13 @@
   justify-content: center;
   padding: 20px;
   height: 100vh;
-  background-color: rgb(75, 207, 240);
+  background-color: $middle-color;
 }
 
 .container h1 {
   margin-bottom: 20px;
   font-size: 50px;
-  color: #3a3a3a;
+  color: $black-text;
 }
 
 .container__result {
