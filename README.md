@@ -20,6 +20,8 @@ Que abrirá tu browser padrón con el enlace `http://localhost:3000/`
 
 Listo!
 
+![video](./public/covid-status-video.gif)
+
 # Visita el resultado!
 
 [Click aqui](https://covid-app-status.vercel.app/) para visitar la página
