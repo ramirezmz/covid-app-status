@@ -1,20 +1,41 @@
+# ¿Como ejecutar el proyecto localmente?
+
+Clona el repositório con el siguiente comando:
+`git clone https://github.com/ramirezmz/covid-app-status`
+
+Luego entra en la carpeta
+`cd covid-app-status`
+
+Instala las dependencias
+
+OBS. Para instalar las dependencias, puedes usar `npm install` o también `yarn`
+
+Ejecutar el proyecto con
+
+`yarn dev`
+
+Que abrirá tu browser padrón con el enlace `http://localhost:3000/`
+
+Listo!
+
 # Visita el resultado!
 
 [Click aqui](https://covid-app-status.vercel.app/) para visitar la página
 
 # Temática a desarrollar
+
 COVID-19
 https://github.com/M-Media-Group/Covid-19-API
 
+## Ingredientes
 
-## Puntos a cubrir
-1. [x] Diseña un sitio web full responsive sin utilizar frameworks como Bootstrap o Foundation, el diseño es a tu elección.
-2. [x] Conectate a alguna de las API proporcionadas en las temáticas.
-3. [x] Agrega la opción de búsqueda de información.
-4. [x] Interactúa con la información obtenida del API, flujo básico de navegación de recursos.
-5. [x] Agrega un menú de hamburguesa y un botón flotante.
-6. [x] Añade estados.
-7. [x] Añade Redux.
-8. [x] Muestra tu proyecto live en alguna plataforma en la nube.
-9. [x] Agrega un preprocesador de estilos.
-10. [x] Empaqueta tu aplicación en un contenedor de Docker.
+- Sass
+- Typescript
+- React
+- Eslint
+- Prettier
+- Axios
+- Lodash
+- Vite
+- React icons
+
