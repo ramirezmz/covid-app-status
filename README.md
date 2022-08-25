@@ -1,14 +1,16 @@
 # ¿Como ejecutar el proyecto localmente?
 
 Clona el repositório con el siguiente comando:
+
 `git clone https://github.com/ramirezmz/covid-app-status`
 
 Luego entra en la carpeta
+
 `cd covid-app-status`
 
 Instala las dependencias
 
-OBS. Para instalar las dependencias, puedes usar `npm install` o también `yarn`
+Para instalar las dependencias, puedes usar `npm install` o también `yarn`
 
 Ejecutar el proyecto con
 
@@ -38,4 +40,3 @@ https://github.com/M-Media-Group/Covid-19-API
 - Lodash
 - Vite
 - React icons
-
